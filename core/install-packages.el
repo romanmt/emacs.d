@@ -4,6 +4,7 @@
                       starter-kit-lisp
                       starter-kit-js 
                       starter-kit-bindings
+                      wrap-region
                       ace-jump-mode
                       color-theme-sanityinc-tomorrow
                       sws-mode
