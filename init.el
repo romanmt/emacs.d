@@ -29,3 +29,6 @@
 ;; load modules
 (dolist (file (directory-files modules-dir t "\\w+"))
   (require (intern (file-name-from-path-no-ext file))))
+
+;; hooks
+(add-hook 'js-mode-hook 'whitespace-mode)
