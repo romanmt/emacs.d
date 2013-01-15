@@ -9,11 +9,6 @@
 ;; turn off splash screen
 (setq inhibit-startup-message t)
 
-;; turn off autosave/backup
-(setq make-backup-files nil)
-(setq auto-save-list-file-name nil)
-(setq auto-save-default nil)
-
 ;; setup load paths
 (setq core-dir (concat user-emacs-directory "core"))
 (setq elpa-dir (concat user-emacs-directory "elpa"))
@@ -23,7 +18,7 @@
 (add-to-list 'load-path modules-dir)
 
 ;; setup and install packages
-(require 'setup-marmalade)
+(require 'setup-package-repo)
 (require 'install-packages)
 
 ;; load modules
@@ -32,3 +27,8 @@
 
 ;; hooks
 (add-hook 'js-mode-hook 'whitespace-mode)
+
+;; turn off autosave/backup
+(setq make-backup-files nil)
+(setq auto-save-list-file-name nil)
+(setq auto-save-default nil)

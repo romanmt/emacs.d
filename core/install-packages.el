@@ -6,6 +6,7 @@
                       starter-kit-bindings
                       wrap-region
                       ace-jump-mode
+                      sr-speedbar
                       color-theme-sanityinc-tomorrow
                       sws-mode
                       jade-mode)
