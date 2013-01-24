@@ -17,13 +17,15 @@
 (add-to-list 'load-path core-dir)
 (add-to-list 'load-path modules-dir)
 
-;; setup for mac
+;; mac setup
 (setq is-mac (equal system-type 'darwin))
 (when is-mac (require 'mac))
 
 ;; setup and install packages
 (require 'setup-package-repo)
 (require 'install-packages)
+
+(require 'smooth-scrolling)
 
 ;; load modules
 (dolist (file (directory-files modules-dir t "\\w+"))
