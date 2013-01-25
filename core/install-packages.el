@@ -12,7 +12,8 @@
                       jade-mode
                       smooth-scrolling
                       magit
-                      yasnippet)
+                      yasnippet
+                      pomodoro)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
