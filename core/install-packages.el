@@ -1,25 +1,25 @@
-;; Add in your own as you wish:
-(defvar my-packages '(
-                      starter-kit 
-                      starter-kit-js
-                      starter-kit-lisp
-                      starter-kit-bindings
-                      wrap-region
-                      ace-jump-mode
-                      sr-speedbar
-                      color-theme-sanityinc-tomorrow
-                      sws-mode
-                      jade-mode
-                      smooth-scrolling
-                      magit
-                      yasnippet
-                      pomodoro)
-  "A list of packages to ensure are installed at launch.")
+(defun init--install-packages ()
+  (packages-install
+   (cons 'ace-jump-mode melpa)
+   (cons 'change-inner melpa)
+   (cons 'clojure-mode melpa)
+   (cons 'clojure-snippets melpa)
+   (cons 'clojure-test-mode melpa)
+   (cons 'color-theme-sanityinc-tomorrow melpa)
+   (cons 'icicles melpa)
+   (cons 'jade-mode melpa)
+   (cons 'js2-mode melpa)   
+   (cons 'magit melpa)
+   (cons 'smooth-scrolling melpa)
+   (cons 'sr-speedbar melpa)
+   (cons 'sws-mode melpa)
+   (cons 'wrap-region melpa)
+   (cons 'yasnippet melpa)))
 
-(dolist (p my-packages)
-  (when (not (package-installed-p p))
-    (package-install p)))
-(defun file-name-from-path-no-ext (file)
-    (file-name-sans-extension (file-name-nondirectory file)))
+(condition-case nil
+    (init--install-packages)
+  (error
+   (package-refresh-contents)
+   (init--install-packages)))
 
 (provide 'install-packages)
