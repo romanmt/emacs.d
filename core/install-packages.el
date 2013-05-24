@@ -1,6 +1,7 @@
 (defun init--install-packages ()
   (packages-install
    (cons 'ace-jump-mode melpa)
+   (cons 'ack-and-a-half melpa)
    (cons 'change-inner melpa)
    (cons 'clojure-mode melpa)
    (cons 'clojure-snippets melpa)

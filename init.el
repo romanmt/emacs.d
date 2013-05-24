@@ -26,12 +26,14 @@
                             "/usr/local/bin:"
                             (shell-command-to-string "echo $PATH")))
 
+(setq exec-path (append exec-path '("/usr/local/bin/")))
+
 ;; Setup and install packages
 (require 'setup-package-repo)
 (require 'install-packages)
 (require 'smooth-scrolling)
 
-;; load functions
+;; Load functions
 (dolist (file (directory-files defuns-dir t "\\w+"))
   (when (file-regular-p file) (load file)))
 
