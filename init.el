@@ -31,7 +31,8 @@
 ;; Setup and install packages
 (require 'setup-package-repo)
 (require 'install-packages)
-(require 'smooth-scrolling)
+(require 'sane-defaults)
+(require 'key-bindings)
 
 ;; Load functions
 (dolist (file (directory-files defuns-dir t "\\w+"))
@@ -41,10 +42,10 @@
 (dolist (file (directory-files modules-dir t "\\w+"))
   (require (intern (file-name-from-path-no-ext file))))
 
-;; hooks
-(add-hook 'js-mode-hook 'whitespace-mode)
+;;(add-hook 'js-mode-hook 'whitespace-mode)
 
 ;; turn off autosave/backup
 (setq make-backup-files nil)
 (setq auto-save-list-file-name nil)
-(setq auto-save-default nil)
+(setq auto-save-default nil)'
+'
