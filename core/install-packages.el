@@ -14,6 +14,7 @@
    (cons 'magit melpa)
    (cons 'smooth-scrolling melpa)
    (cons 'sr-speedbar melpa)
+   (cons 'switch-window melpa)
    (cons 'sws-mode melpa)
    (cons 'wrap-region melpa)
    (cons 'yasnippet melpa)))
