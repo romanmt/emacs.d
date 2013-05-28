@@ -2,6 +2,7 @@
   (packages-install
    (cons 'ace-jump-mode melpa)
    (cons 'ack-and-a-half melpa)
+   (cons 'ag melpa)
    (cons 'change-inner melpa)
    (cons 'clojure-mode melpa)
    (cons 'clojure-snippets melpa)
