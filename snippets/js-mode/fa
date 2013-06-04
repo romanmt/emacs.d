@@ -3,6 +3,6 @@
 # key: fa
 # binding: C-qa
 # --
-var ${$1:name} = function ($2) {
+var ${1:name} = function ($2) {
     $0
 }
