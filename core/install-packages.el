@@ -12,6 +12,7 @@
    (cons 'jade-mode melpa)
    (cons 'js2-mode melpa)   
    (cons 'magit melpa)
+   (cons 'redo+ melpa)
    (cons 'smooth-scrolling melpa)
    (cons 'sr-speedbar melpa)
    (cons 'switch-window melpa)

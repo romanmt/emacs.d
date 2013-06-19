@@ -1,5 +1,4 @@
 (require 'cl)
-(require 'package)
 
 ;; turn off mouse interface
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))

@@ -4,5 +4,8 @@
 (global-set-key (kbd "C-' C-a") 'ack-and-a-half)
 (global-set-key (kbd "C-' C-s") 'ag-project)
 (global-set-key (kbd "C-' C-n") (kbd "C-c s"))
+(global-set-key (kbd "C-' C-l") 'goto-line)
+(global-set-key (kbd "C-u")     'undo)
+(global-set-key (kbd "C-S-u")   'redo)
 
 (provide 'key-bindings)
