@@ -8,6 +8,8 @@
    (cons 'clojure-snippets melpa)
    (cons 'clojure-test-mode melpa)
    (cons 'color-theme-sanityinc-tomorrow melpa)
+   (cons 'dash-at-point melpa)
+   (cons 'find-file-in-project melpa)
    (cons 'icicles melpa)
    (cons 'jade-mode melpa)
    (cons 'js2-mode melpa)   
