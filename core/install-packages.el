@@ -11,6 +11,8 @@
    (cons 'dash-at-point melpa)
    (cons 'find-file-in-project melpa)
    (cons 'fuzzy-match melpa)
+   (cons 'helm melpa)
+   (cons 'helm-cmd-t melpa)
    (cons 'icicles melpa)
    (cons 'jade-mode melpa)
    (cons 'js2-mode melpa)   
