@@ -3,6 +3,7 @@
 
 (setq-default js2-strict-inconsistent-return-warning nil)
 (setq-default js2-strict-missing-semi-warning nil)
+(setq-default js2-allow-keywords-as-property-names t)
 
 (setq js2-basic-offset 2)
 (setq-default js2-basic-offset 2)
