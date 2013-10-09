@@ -8,5 +8,6 @@
 (global-set-key (kbd "C-' C-d") 'dash-at-point)
 (global-set-key (kbd "C-u")     'undo)
 (global-set-key (kbd "C-S-u")   'redo)
-
+(global-set-key (kbd "C-' C-i") 'change-inner)
+(global-set-key (kbd "C-' C-o") 'change-outer)
 (provide 'key-bindings)
