@@ -2,7 +2,7 @@
 (setq mac-command-modifier 'meta)
 (setq ns-function-modifier 'hyper)
 
-(set-face-attribute 'default nil :family "Inconsolata" :height 230 :weight 'normal)
+(set-face-attribute 'default nil :family "M+ 1m" :height 160 :weight 'light)
 
 ;; move to trash when deleting
 (setq delete-by-moving-to-trash t
