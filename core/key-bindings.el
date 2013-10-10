@@ -1,3 +1,4 @@
+(global-set-key (kbd "C-x C-s") 'clean-and-save-buffer)
 (global-set-key (kbd "C-' C-b") 'ibuffer)
 (global-set-key (kbd "C-' C-f") 'find-file-in-project)
 (global-set-key (kbd "C-' C-g") 'magit-status)
