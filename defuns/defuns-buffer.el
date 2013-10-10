@@ -1,5 +1,6 @@
 (defun clean-and-save-buffer ()
   "Does some basic cleanup on the buffer before saving."
+  (interactive)
   (cleanup-buffer)
   (save-buffer))
 
